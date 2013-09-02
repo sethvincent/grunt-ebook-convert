@@ -1,7 +1,7 @@
 {
   "name": "grunt-ebook-convert",
   "description": "grunt task for generating ebooks with the calibre command-line tool ebook-convert",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/sethvincent/grunt-ebook-convert",
   "author": {
     "name": "sethvincent",
