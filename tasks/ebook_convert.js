@@ -12,15 +12,23 @@ module.exports = function(grunt) {
 
   var convert = require('ebook-convert');
 
-  grunt.registerMultiTask('ebook-convert', 'generate ebooks with calibre', function() {
-    var options = this.options();
+  grunt.registerMultiTask('ebook_convert', 'generate ebooks with calibre', function() {
+    var done = this.async();
 
-    grunt.verbose.writeflags(options, 'Options');
+    var source = this.data.source;
+    var target = this.target;
+    var args = this.data.arguments;
 
-    this.files.forEach(function(f) {
-      options.target = f.dest;
-      convert(options);
-      grunt.log.ok('Created ' + options.target);
+    var file = convert({
+      source: source,
+      target: target,
+      arguments: args
     });
+
+    file.on('end', function(){
+      grunt.log.ok('Created target');
+      done();
+    });
+      
   });
 };
