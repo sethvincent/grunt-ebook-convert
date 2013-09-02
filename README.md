@@ -2,6 +2,11 @@
 
 > grunt task for generating ebooks with the calibre command-line tool ebook-convert
 
+
+## Dependencies
+- [node-ebook-convert](http://github.com/sethvincent/node-ebook-convert)
+- [calibre](http://calibre-ebook.com/download)
+
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
 
