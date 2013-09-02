@@ -1,0 +1,45 @@
+{
+  "name": "grunt-ebook-convert",
+  "description": "grunt task for generating ebooks with the calibre command-line tool ebook-convert",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sethvincent/grunt-ebook-convert",
+  "author": {
+    "name": "sethvincent",
+    "email": "sethvincent@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sethvincent/grunt-ebook-convert.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sethvincent/grunt-ebook-convert/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/sethvincent/grunt-ebook-convert/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "ebook-convert": "0.0.2"
+  }
+}
