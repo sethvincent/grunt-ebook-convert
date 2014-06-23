@@ -40,6 +40,6 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "ebook-convert": "0.0.2"
+    "ebook-convert": "0.1.0"
   }
 }
